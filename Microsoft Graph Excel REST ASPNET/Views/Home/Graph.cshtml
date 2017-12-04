@@ -1,0 +1,43 @@
+﻿<!--  Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license.
+        See LICENSE in the source repository root for complete license information. -->
+
+@using Resources
+
+@{
+  ViewBag.Title = Resource.App_Name;
+}
+
+<h1>@ViewBag.Title</h1>
+
+<p>@Html.Raw(Resource.Graph_GetUserInfo_Instruction)</p>
+@using (Html.BeginForm("GetMyUserInfo", "Home"))
+{
+    <div class="col-sm-12">
+        <div class="form-group">
+            <button class="btn btn-default" id="get-my-user-info">@Resource.Graph_GetUserInfo_Button</button>
+        </div>        
+    </div>
+}
+<div class="col-sm-12">
+    <label for="user-email-name-address">@Resource.Graph_GetUserInfo_Label</label>
+    <pre name="user-email-name-address"><p>@ViewBag.Name</p><p>@ViewBag.Email</p></pre>
+
+</div>
+
+@using (Html.BeginForm("UploadInfoToExcel", "Home"))
+{
+    <div class="col-sm-12">
+            <div class="form-group">
+                
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-default" @(ViewBag.Name == null ? "disabled" : null)>@Resource.Graph_UploadToExcel_Button</button>
+                <input name="user-name" value=@ViewBag.Name type="hidden" />
+                <input name="user-email" value=@ViewBag.Email type="hidden" />
+            </div>
+        </div>
+}
+<div class="col-sm-12">
+    <p class="@(ViewBag.Message == null ? "hidden" : null)">@Html.Raw(ViewBag.Message)</p>
+</div>
