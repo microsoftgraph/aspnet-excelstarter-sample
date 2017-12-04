@@ -53,7 +53,7 @@ This sample requires the following:
 
 ## Build and run the sample
 
-1. Download or clone the Microsoft Graph Connect Sample for ASP.NET 4.6.
+1. Download or clone the Microsoft Graph Excel Starter Sample for ASP.NET 4.6.
 
 2. Open the sample solution in Visual Studio.
 
