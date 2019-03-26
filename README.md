@@ -27,29 +27,42 @@ This sample requires the following:
   
 ## Register the application
 
-1. Sign into the [App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
+1. Determine your ASP.NET app's URL. In Visual Studio's Solution Explorer, select the **graph-tutorial** project. In the **Properties** window, find the value of **URL**. Copy this value.
 
-2. Choose **Add an app**.
+    ![Screenshot of the Visual Studio Properties window](./images/vs-project-url.jpg)
 
-3. Enter a name for the app, and choose **Create application**. 
-	
-   The registration page displays, listing the properties of your app.
+1. Open a browser and navigate to the [Azure Active Directory admin center](https://aad.portal.azure.com). Login using a **personal account** (aka: Microsoft Account) or **Work or School Account**.
 
-4. Copy the Application Id. This is the unique identifier for your app. 
+1. Select **Azure Active Directory** in the left-hand navigation, then select **App registrations (Preview)** under **Manage**.
 
-5. Under **Application Secrets**, choose **Generate New Password**. Copy the password from the **New password generated** dialog.
+    ![A screenshot of the App registrations ](./images/add-portal-app-registrations.jpg)
 
-   You'll use the application ID and password to configure the sample app in the next section. 
+1. Select **New registration**. On the **Register an application** page, set the values as follows.
 
-6. Under **Platforms**, choose **Add platform**.
+    - Set **Name** to `ASP.NET Graph Tutorial`.
+    - Set **Supported account types** to **Accounts in any organizational directory and personal Microsoft accounts**.
+    - Under **Redirect URI**, set the first drop-down to `Web` and set the value to the ASP.NET app URL you copied in step 1.
 
-7. Choose **Web**.
+    ![A screenshot of the Register an application page](./images/add-register-an-app.jpg)
 
-8. Make sure the **Allow Implicit Flow** check box is selected, and enter *http://localhost:55065/* as the Redirect URI. 
+1. Choose **Register**. On the **ASP.NET Graph Tutorial** page, copy the value of the **Application (client) ID** and save it, you will need it in the next step.
 
-   The **Allow Implicit Flow** option enables the hybrid flow. During authentication, this enables the app to receive both sign-in info (the id_token) and artifacts (in this case, an authorization code) that the app can use to obtain an access token.
+    ![A screenshot of the application ID of the new app registration](./images/add-application-id.jpg)
 
-9. Choose **Save**.
+1. Select **Authentication** under **Manage**. Locate the **Implicit grant** section and enable **ID tokens**. Choose **Save**.
+
+    ![A screenshot of the Implicit grant section](./images/add-implicit-grant.jpg)
+
+1. Select **Certificates & secrets** under **Manage**. Select the **New client secret** button. Enter a value in **Description** and select one of the options for **Expires** and choose **Add**.
+
+    ![A screenshot of the Add a client secret dialog](./images/add-new-client-secret.jpg)
+
+1. Copy the client secret value before you leave this page. You will need it in the next step.
+
+    > [!IMPORTANT]
+    > This client secret is never shown again, so make sure you copy it now.
+
+    ![A screenshot of the newly added client secret](./images/add-copy-client-secret.jpg)
 
 ## Build and run the sample
 
@@ -89,6 +102,6 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 - [Office dev center](http://dev.office.com/)
 
 ## Copyright
-Copyright (c) 2017 Microsoft. All rights reserved.
+Copyright (c) 2019 Microsoft. All rights reserved.
 
 
