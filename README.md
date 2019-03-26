@@ -27,7 +27,7 @@ This sample requires the following:
   
 ## Register the application
 
-1. Determine your ASP.NET app's URL. In Visual Studio's Solution Explorer, select the **graph-tutorial** project. In the **Properties** window, find the value of **URL**. Copy this value.
+1. Determine your ASP.NET app's URL. In Visual Studio's Solution Explorer, select the **Microsoft Graph Excel REST ASPNET** project. In the **Properties** window, find the value of **URL**. Copy this value.
 
     ![Screenshot of the Visual Studio Properties window](./images/vs-project-url.jpg)
 
@@ -39,13 +39,13 @@ This sample requires the following:
 
 1. Select **New registration**. On the **Register an application** page, set the values as follows.
 
-    - Set **Name** to `ASP.NET Graph Tutorial`.
+    - Set **Name** to `ASPNET Excel Starter Sample`.
     - Set **Supported account types** to **Accounts in any organizational directory and personal Microsoft accounts**.
     - Under **Redirect URI**, set the first drop-down to `Web` and set the value to the ASP.NET app URL you copied in step 1.
 
     ![A screenshot of the Register an application page](./images/add-register-an-app.jpg)
 
-1. Choose **Register**. On the **ASP.NET Graph Tutorial** page, copy the value of the **Application (client) ID** and save it, you will need it in the next step.
+1. Choose **Register**. On the **ASPNET Excel Starter Sample** page, copy the value of the **Application (client) ID** and save it, you will need it in the next step.
 
     ![A screenshot of the application ID of the new app registration](./images/add-application-id.jpg)
 
