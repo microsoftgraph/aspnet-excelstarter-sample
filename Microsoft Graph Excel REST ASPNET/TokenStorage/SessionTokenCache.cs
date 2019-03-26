@@ -68,6 +68,7 @@ namespace Microsoft_Graph_Excel_REST_ASPNET.TokenStorage
             // Optimistically set HasStateChanged to false. We need to do it early to avoid losing changes made by a concurrent thread.
             cache.HasStateChanged = false;
 
+
             // Reflect changes in the persistent store
             httpContext.Session[CacheId] = cache.Serialize();
             SessionLock.ExitWriteLock();
