@@ -1,3 +1,22 @@
+---
+page_type: sample
+products:
+- office-excel
+- office-onedrive
+- ms-graph
+languages:
+- aspx
+- csharp
+extensions:
+  contentType: samples
+  technologies:
+  - Microsoft Graph
+  services:
+  - Excel
+  - OneDrive
+  - Users
+  createdDate: 12/4/2017 10:26:12 AM
+---
 # Microsoft Graph Excel Starter Sample for ASP.NET 4.6
 
 ## Table of contents
