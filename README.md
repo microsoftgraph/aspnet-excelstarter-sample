@@ -12,7 +12,7 @@ extensions:
   technologies:
   - Microsoft Graph
   services:
-  - Excel
+  - Excel 
   - OneDrive
   - Users
   createdDate: 12/4/2017 10:26:12 AM
