@@ -7,6 +7,7 @@ products:
 languages:
 - aspx
 - csharp
+description: "This sample shows how to connect an ASP.NET web app to a Microsoft work or school (Azure Active Directory) using the Microsoft Graph API."
 extensions:
   contentType: samples
   technologies:
