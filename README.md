@@ -1,4 +1,4 @@
-# Microsoft Graph Excel Starter Sample for ASP.NET 4.6
+# [ARCHIVED] Microsoft Graph Excel Starter Sample for ASP.NET 4.6
 
 ## IMPORTANT
 
