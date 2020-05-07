@@ -1,24 +1,10 @@
----
-page_type: sample
-products:
-- office-excel
-- office-onedrive
-- ms-graph
-languages:
-- aspx
-- csharp
-description: "This sample shows how to connect an ASP.NET web app to a Microsoft work or school (Azure Active Directory) using the Microsoft Graph API."
-extensions:
-  contentType: samples
-  technologies:
-  - Microsoft Graph
-  services:
-  - Excel 
-  - OneDrive
-  - Users
-  createdDate: 12/4/2017 10:26:12 AM
----
 # Microsoft Graph Excel Starter Sample for ASP.NET 4.6
+
+## IMPORTANT
+
+**This project is being archived and replaced with the [Build ASP.NET MVC apps with the Microsoft Graph SDK training](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp). As part of the archival process, we're closing all open issues and pull requests.**
+
+**You can continue to use this sample "as-is", but it won't be maintained moving forward. We apologize for any inconvenience.**
 
 ## Table of contents
 
